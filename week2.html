@@ -2,9 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites</title>
+    <style>
+        /* CSS styles here */
+        .page-title {
+            font-size: 36px;
+            color: navy;
+        }
+
+        .favorite-section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        .favorite-section .section-header {
+            font-size: 24px;
+            color: darkblue;
+        }
+
+        body {
+            background-color: lightgrey;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        #favorite-movie-title {
+            font-style: italic;
+            color: #cc0000;
+        }
+
+        #favorite-music-name {
+            font-weight: bold;
+            color: #006600;
+        }
+
+        #most-favorite-food {
+            font-weight: bold;
+            color: #660066;
+        }
+
+        .favorite-image {
+            border-radius: 10px;
+            filter: grayscale(50%);
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+        }
+
+        .favorite-image:hover {
+            filter: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+    </style>
 </head>
 <body>
+<h1 class="page-title">My Favorites</h1>
 
+<div class="favorite-section">
+    <h2 class="section-header">Favorite Movie</h2>
+    <p>Description of my favorite movie, <span id="The matrix">Movie Name</span>.</p>
+    <a href="https://youtube.com/watch?v=dKnJ3rDgX9I">More about the movie</a>
+</div>
+
+<div class="favorite-section">
+    <h2 class="section-header">Favorite Band/Music Artist</h2>
+    <p>Description of my favorite band/artist, <span id="favorite-music-name">Celine Dion</span>.</p>
+    <a href="https://google.com/search?client=firefox-b-1-d&q=celine+dion">Explore more about Celine Dion</a>
+</div>
+
+<div class="favorite-section">
+    <h2 class="section-header">My Favorite Food</h2>
+    <ul>
+        <li id="most-favorite-food">Pizza</li>
+        <li>Rice</li>
+        <li>Chicken</li>
+    </ul>
+</div>
+
+<div class="favorite-section">
+    <h2 class="section-header">Favorite Images</h2>
+    <img  src="food1.jpg" alt="food1 1" height="100" weight="100">
+    <img  src="pizza.jpg" alt="pizza 2" height="100" weight="100">
+</div>
+
+<div class="favorite-section">
+    <h2 class="section-header">Favorite Books</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>JavaScript and HTML and CSS</td>
+            <td>Murach</td>
+            <td><a href="https://google.com/search?client=firefox-b-1-d&q=murach+books">More about Murach books</a></td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>

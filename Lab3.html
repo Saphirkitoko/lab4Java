@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missile Alert System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #alertMessage {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h2>Missile Alert System</h2>
+<button onclick="triggerAlert()">Trigger Missile Alert</button>
+<div id="alertMessage"></div>
+
+<script>
+    function triggerAlert() {
+        // Simulate an alert message
+        let alertMessage = "MISSILE ALERT: Seek immediate shelter!";
+
+        // Display the alert message on the page
+        document.getElementById("alertMessage").textContent = alertMessage;
+
+        // You would typically have additional logic here to handle the alert,
+        // such as notifying authorities, sounding alarms, etc.
+    }
+</script>
+</body>
+</html>
+
