@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10957d35-b54d-4dd1-af0d-b45eeef4f146" name="Changes" comment="lab 3">
+    <list default="true" id="10957d35-b54d-4dd1-af0d-b45eeef4f146" name="Changes" comment="lab 4 java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706835635045</updated>
-      <workItem from="1706835636168" duration="5351000" />
+      <workItem from="1706835636168" duration="6251000" />
     </task>
     <task id="LOCAL-00001" summary="lab 3">
       <created>1706838999884</created>
@@ -74,7 +74,21 @@
       <option name="project" value="LOCAL" />
       <updated>1707259109847</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lab 4 java">
+      <created>1707259926797</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707259926797</updated>
+    </task>
+    <task id="LOCAL-00005" summary="lab 4 java">
+      <created>1707260296759</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707260296759</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +107,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lab 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab 3" />
+    <MESSAGE value="lab 4 java" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab 4 java" />
   </component>
 </project>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <style>
+        .selected {
+            background-color: #428ba5;
+        }
+    </style>
+</head>
+<body>
+<h2>Student Management System</h2>
+<form id="student-form">
+    <label for="student-name">Name:</label>
+    <input type="text" id="student-name">
+    <label for="student-id">ID:</label>
+    <input type="text" id="student-id">
+    <label for="student-gpa">GPA:</label>
+    <input type="number" id="student-gpa" min="0" max="4" step="0.01">
+    <button type="button" id="add-student">Add Student</button>
+    <button type="button" id="remove-selected-students">Remove Selected Students</button>
+</form>
+<p>Total Students: <span id="student-count">0</span></p>
+<ul id="student-list">
+    <!-- List of students will be displayed here -->
+</ul>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const studentForm = document.getElementById('student-form');
+        const studentNameInput = document.getElementById('student-name');
+        const studentIdInput = document.getElementById('student-id');
+        const studentGpaInput = document.getElementById('student-gpa');
+        const addStudentButton = document.getElementById('add-student');
+        const removeSelectedButton = document.getElementById('remove-selected-students');
+        const studentCountSpan = document.getElementById('student-count');
+        const studentList = document.getElementById('student-list');
+
+        let studentCount = 0;
+
+        addStudentButton.addEventListener('click', function () {
+            const name = studentNameInput.value.trim();
+            const id = studentIdInput.value.trim();
+            const gpa = parseFloat(studentGpaInput.value);
+
+            if (!name || !id || isNaN(gpa) || gpa < 0 || gpa > 4) {
+                alert('Please enter valid name, ID, and GPA (between 0 and 4).');
+                return;
+            }
+
+            const li = document.createElement('li');
+            li.innerHTML = `<strong>Name:</strong> ${name}, <strong>ID:</strong> ${id}, <strong>GPA:</strong> ${gpa}`;
+            li.addEventListener('click', function () {
+                li.classList.toggle('selected');
+            });
+
+            studentList.appendChild(li);
+            studentCount++;
+            studentCountSpan.textContent = studentCount;
+
+            studentForm.reset(); // Clear the form
+        });
+
+        removeSelectedButton.addEventListener('click', function () {
+            const selectedStudents = document.querySelectorAll('.selected');
+            selectedStudents.forEach(function (student) {
+                student.remove();
+                studentCount--;
+            });
+            studentCountSpan.textContent = studentCount;
+        });
+    });
+</script>
+</body>
+</html>
